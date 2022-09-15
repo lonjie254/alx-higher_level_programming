@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""define a class Square"""
+"""Define a class Square"""
 
 
 class Square:
-    """define an empty class names Square"""
-        pass
+    """Define an empty class named Square"""
+    pass
