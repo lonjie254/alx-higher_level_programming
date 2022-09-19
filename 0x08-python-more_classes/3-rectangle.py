@@ -5,9 +5,9 @@
 class Rectangle:
     """ Rectangle """
     def __init__(self, width=0, height=0):
-        """ initialize width and height """
-        self.height = height
+        """ initialize """
         self.width = width
+        self.height = height
 
     def __str__(self):
         """ returns set of rectangle """
@@ -20,7 +20,7 @@ class Rectangle:
             ret += '\n'
         return ret[:-1]
 
-      @property
+    @property
     def width(self):
         """ gets the width """
         return self.__width
@@ -49,11 +49,11 @@ class Rectangle:
         self.__height = value
 
     def area(self):
-        """ calculates and returns the rectangle area """
+        """ calculates area of a rectangle """
         return self.__width * self.__height
 
     def perimeter(self):
-        """ calculates and returns the Rectangle perimeter """
-        if self.__width == 0 or self.__height == 0:
+        """ calculates the perimeter of a rectangle """
+        if self.__height == 0 or self.__width == 0:
             return 0
         return 2 * (self.__width + self.__height)
